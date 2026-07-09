@@ -354,6 +354,4 @@
   window.onscroll=function(){window.scrollTo(0,0)};window.addEventListener("contextmenu",function(a){a.preventDefault()});document.addEventListener("touchstart",function(a){a.preventDefault()});document.addEventListener("touchmove",function(a){a.preventDefault()});window.addEventListener("touchend",function(){if(null!==game)try{"running"!==game.sound.context.state&&game.sound.context.resume()}catch(a){}},!1);
   isIOS||(document.addEventListener("touchstart",function(a){a.preventDefault()}),document.addEventListener("touchmove",function(a){a.preventDefault()}));document.addEventListener("keydown",function(a){a.preventDefault()});document.addEventListener("keyup",function(a){a.preventDefault()});gdistSoundStateBefore=!1;
   window.SDK_OPTIONS={gameId:"3q80p17x8eyytny0m1t5i9f78079vady",onEvent:function(a){switch(a.name){case "SDK_GAME_START":null!=game&&(game.sound.mute=gdistSoundStateBefore,game.paused=!1);break;case "SDK_GAME_PAUSE":null!=game&&(gamePaused=game.paused=!0,gdistSoundStateBefore=game.sound.mute,game.sound.mute=!0)}}};
-  (function(a,b,c){var d=a.getElementsByTagName(b)[0];a.getElementById(c)||(a=a.createElement(b),a.id=c,a.src="/js/main.js",d.parentNode.insertBefore(a,d))})(document,"script","gamemonetize-sdk");
-  
   }();
